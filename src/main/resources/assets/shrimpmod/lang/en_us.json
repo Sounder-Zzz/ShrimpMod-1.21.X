@@ -1,5 +1,6 @@
 {
   "item.shrimpmod.shrimp": "Shrimp",
   "item.shrimpmod.raw_shrimp": "Raw Shrimp",
-  "block.shrimpmod.shrimp_tank": "Shrimp Tank"
+  "block.shrimpmod.shrimp_tank": "Shrimp Tank",
+  "creativetab.shrimpmod.shrimp_items": "Shrimp Items"
 }
