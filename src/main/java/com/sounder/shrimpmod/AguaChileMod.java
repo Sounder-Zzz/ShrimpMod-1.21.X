@@ -1,5 +1,6 @@
 package com.sounder.shrimpmod;
 
+import com.sounder.shrimpmod.block.ModBlock;
 import com.sounder.shrimpmod.item.ModItem;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
@@ -41,6 +42,7 @@ public class AguaChileMod
         NeoForge.EVENT_BUS.register(this);
 
         ModItem.register(modEventBus);
+        ModBlock.register(modEventBus);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -59,6 +61,10 @@ public class AguaChileMod
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItem.SHRIMP);
             event.accept(ModItem.RAW_SHRIMP);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept((ModBlock.SHRIMP_TANK));
         }
     }
 
